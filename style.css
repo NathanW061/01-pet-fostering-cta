@@ -1,0 +1,151 @@
+
+/* Base styles: set a modern, readable font and light page background */
+body {
+	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	margin: 0;
+	background: #f4fbff; /* gentle, calm background */
+	color: #053f5e;
+}
+
+/* Site header: simple, short, aligned with the CTA palette */
+.site-header {
+  background: rgba(2,128,144,0.06); /* subtle teal tint */
+  padding: 14px 20px; /* small vertical padding */
+  text-align: center;
+}
+
+/* Site title: prominent but compact */
+.site-title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #003049; /* deep navy for contrast */
+  font-weight: 700;
+}
+
+/* CTA banner: tall, nature-inspired blue & teal palette with background image */
+.cta-banner {
+  background-image: linear-gradient(rgba(5, 102, 141, 0.65), rgba(2, 128, 144, 0.65)), url('../img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  min-height: 680px; /* taller banner for more visual impact */
+  padding: 40px 20px 80px 20px; /* reduced top padding, more bottom */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Constrain content width so text stays readable on large screens */
+.cta-content {
+  max-width: 900px;
+  margin: 0;
+}
+
+/* Main heading: large and attention grabbing */
+.cta-banner h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  line-height: 1.05;
+}
+
+/* Short description to explain why fostering matters */
+.cta-lead {
+  font-size: 1.125rem;
+  margin: 0 0 1.5rem;
+  opacity: 0.95;
+}
+
+/* Call-to-action button: bright accent to stand out against blue/teal */
+.cta-button {
+  display: inline-block;
+  background: #ffd166; /* warm, eye-catching accent */
+  color: #003049;
+  padding: 14px 24px;
+  border-radius: 999px; /* pill-shaped button */
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+/* Button hover/focus state for affordance */
+.cta-button:hover,
+.cta-button:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .cta-banner h1 {
+    font-size: 2rem;
+  }
+  .site-title {
+    font-size: 1rem;
+  }
+}
+
+/* Foster info section: two-column layout with image and text */
+.foster-info {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+/* Center the info container and limit max width */
+.info-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Each column takes up half the space */
+.info-column {
+  flex: 1;
+}
+
+/* Style the image column */
+.info-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Style the text column */
+.info-text h2 {
+  font-size: 2rem;
+  color: #05668d;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.info-text p {
+  color: #053f5e;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.info-text ul {
+  color: #053f5e;
+  line-height: 1.8;
+  margin-left: 20px;
+}
+
+.info-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .info-text h2 {
+    font-size: 1.5rem;
+  }
+}
